@@ -12,11 +12,11 @@
 // Principle 1
 
 // code example for Window Binding
-var myFunction = function() {
-    console.log(this);
- }
+//var myFunction = function() {
+//    console.log(this);
+// }
  
- myFunction();
+// myFunction();
 // Principle 2
 
 // code example for Implicit Binding
