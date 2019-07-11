@@ -20,11 +20,32 @@
 // Principle 2
 
 // code example for Implicit Binding
-
+//const myObj = {
+//    greeting: 'Hello',
+//    sayHello: function(name) {
+//      console.log(`${this.greeting} my name is ${name}`);
+//      console.log(this);
+//    }
+//  };
+//  myObj.sayHello('Nicholas');
 // Principle 3
 
 // code example for New Binding
-
+function CordialPerson(greeter) {
+    this.greeting = 'Hello ';
+    this.greeter = greeter;
+    this.speak = function() {
+      console.log(this.greeting + this.greeter);
+     console.log(this);
+    };
+  }
+  
+  const Nicholas = new CordialPerson('Chris');
+  const Chris = new CordialPerson('Nicholas');
+  
+  Nicholas.speak();
+  Chris.speak();
 // Principle 4
 
 // code example for Explicit Binding
+Nicholas.speak.call(Chris); Chris.speak.apply(Nicholas); //I dont understand this one...
