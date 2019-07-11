@@ -48,4 +48,4 @@ function CordialPerson(greeter) {
 // Principle 4
 
 // code example for Explicit Binding
-Nicholas.speak.call(Chris); Chris.speak.apply(Nicholas); //I dont understand this one...
+Nicholas.speak.call(Chris);
