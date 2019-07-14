@@ -12,22 +12,22 @@
 // Principle 1
 
 // code example for Window Binding
-//var myFunction = function() {
-//    console.log(this);
-// }
+
+console.log(this);
+
  
 // myFunction();
 // Principle 2
 
 // code example for Implicit Binding
-//const myObj = {
-//    greeting: 'Hello',
-//    sayHello: function(name) {
-//      console.log(`${this.greeting} my name is ${name}`);
-//      console.log(this);
-//    }
-//  };
-//  myObj.sayHello('Nicholas');
+const myObj = {
+    greeting: 'Hello',
+    sayHello: function(name) {
+      console.log(`${this.greeting} my name is ${name}`);
+      console.log(this);
+    }
+  };
+  myObj.sayHello('Nicholas');
 // Principle 3
 
 // code example for New Binding
